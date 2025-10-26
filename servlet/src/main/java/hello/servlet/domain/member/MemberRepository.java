@@ -10,9 +10,11 @@ public class MemberRepository {
     private static long sequence = 0L; //static 사용
 
     private static final MemberRepository instance = new MemberRepository();
+
     public static MemberRepository getInstance() {
         return instance;
     }
+
     private MemberRepository() {
     }
     public Member save(Member member) {
